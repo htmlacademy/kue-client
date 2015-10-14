@@ -1,18 +1,17 @@
-HTML Academy Services API
+HTML Academy Kue Client
 ============
 
-###1 KueApi
-####1.1 Basic usage
+###Basic usage
 ```php
-$api = new \Service\KueApi();
+$api = new \KueClient();
 $api->job('job-type', [
     'param1' => 'value1',
     'param2' => 'value2'
 ]);
 ```
-####1.2 Advanced usage
+###Advanced usage
 
-#####1.2.1 Configuration
+#### Configuration
 ```php
 $config = [
     'scheme' => 'http',
@@ -20,24 +19,22 @@ $config = [
     'port'   => 3000,
     'api'    => '/api'
 ];
-$api = new \Service\KueApi($config);
+$api = new \KueClient($config);
 ```
-#####1.2.1 Job parameters
+####Job parameters
 ```php
-public int \Service\KueApi::job(string $type[, array $data [, mixed $startAt [, string $priority [, int $attempts]]]]);
+public int KueClient::job(string $type[, array $data [, mixed $startAt [, string $priority [, int $attempts]]]]);
 ```
-*Parameters*
+#####Parameters
+*type* - type of created job
 
-**type** - type of created job
+*data* - additional data for job
 
-**data** - additional data for job
+*startAt* - string formatted date or DateTime object to specify a delay for executing this job. `null` if job should run immediately (default)
 
-**startAt** - string formatted date or DateTime object to specify a delay for executing this job. `null` if job should run immediately (default)
+*priority* - priority of the job. Available values `low`, `normal`, `medium`, `high`, `critical`. Default `normal`
 
-**priority** - priority of the job. Available values `low`, `normal`, `medium`, `high`, `critical`. Default `normal`
+*attempts* - count of attempts to execute this job. Default `5`
 
-**attempts** - count of attempts to execute this job. Default `5`
-
-*Return values*
-
+#####Return values
 Returns `id` of created job or `false` if on failure.

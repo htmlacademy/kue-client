@@ -1,8 +1,6 @@
 <?php
 
-namespace Service;
-
-class KueApi
+class KueClient
 {
     private $scheme = 'http';
     private $host = 'localhost';

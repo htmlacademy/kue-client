@@ -1,6 +1,6 @@
 {
-    "name": "htmlacademy/service",
-    "description": "HTML Academy services APIs",
+    "name": "htmlacademy/kue-client",
+    "description": "HTML Academy Kue client",
     "homepage": "https://htmlacademy.ru",
     "authors": [
         {
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Service": "src/"
+            "KueClient": "src/"
         }
     }
 }
