@@ -1,0 +1,8 @@
+{
+    "name": "htmlacademy-service",
+    "homepage": "https://service.htmlacademy.ru",
+    "require": {
+        "php": ">=5.6.0",
+        "zendframework/zend-config": "~2.4"
+    }
+}

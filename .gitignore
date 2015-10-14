@@ -1,0 +1,7 @@
+.DS_Store
+Thumbs.db
+todo.md
+
+composer.lock
+config/local.php
+/vendor
