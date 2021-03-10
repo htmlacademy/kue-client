@@ -48,7 +48,7 @@ class KueClient
         ];
         if (!empty($start)) {
             try {
-                if (!($start instanceof \DateTime)) {
+                if (!($start instanceof \DateTimeInterface)) {
                     $start = new \DateTime($start);
                 }
                 $now = new \DateTime();
