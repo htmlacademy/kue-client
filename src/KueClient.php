@@ -31,7 +31,7 @@ class KueClient
         return [
             'host'   => $this->host,
             'port'   => $this->port,
-            'api'    => $this->port,
+            'api'    => $this->api,
             'scheme' => $this->scheme
         ];
     }
