@@ -23,6 +23,19 @@ class KueClient
         }
     }
 
+    /**
+     * @return array
+     */
+    public function getOptions()
+    {
+        return [
+            'host'   => $this->host,
+            'port'   => $this->port,
+            'api'    => $this->port,
+            'scheme' => $this->scheme
+        ];
+    }
+
     public function job($type, $data = [], $start = null, $priority = 'normal', $attempts = 5)
     {
         $job = [
