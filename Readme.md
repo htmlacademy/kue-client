@@ -1,3 +1,5 @@
+> Репозиторий переехал в [Гитлаб](https://gitlab.htmlacademy.dev/dev/utils/kue-client)
+
 HTML Academy Kue Client
 ============
 
